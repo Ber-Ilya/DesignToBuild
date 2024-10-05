@@ -1,0 +1,212 @@
+{% load django_bootstrap5 %} {% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> <meta name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"> <title>{% block title %}Главная{% endblock %} - СтройМаркет</title> {% bootstrap_css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'main/css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    {% bootstrap_javascript %}
+    </head>
+
+<body>
+    <div class="header header-top">
+        <div class="content">
+            <div class="first-head">
+                <div class="logo">
+                    <img src="{% static 'main/images/logo_Sfera.jpeg' %}" alt="Logo" />
+                  </div>
+                  <span>Проектирование, монтаж и обслуживание зданий "под ключ" по всей РФ</span>
+            </div>
+
+
+            <div class="contact-info">
+              <div class="icons">
+                    <a href="https://wa.me/79809019422">
+                    <img src="{% static 'main/images/telegram-svgrepo-com.svg' %}" alt="Telegram" />
+                    </a>
+                    <a href="https://t.me/Ilya_Beryozkin">
+                    <img src="{% static 'main/images/whatsapp-128-svgrepo-com.svg' %}" alt="Whatsapp" />
+                    </a>
+                </div>
+                <div class="email-phone first-send">
+                    <span>Задайте вопрос напрямую:</span>
+                    <a href="mailto:ilia.beryozkin99@yandex.ru">ilia.beryozkin99@yandex.ru</a>
+                </div>
+            </div>
+
+
+
+            <div class="phone-number first-send">
+                <span>Звоните, мы сейчас работаем:</span>
+                <a href="tel:79809019422">+7 (980) 901-94-22</a>
+            </div>
+            <a href="#" class="consultation-btn">Заказать быструю консультацию</a>
+        </div>
+    </div>
+
+      <nav class="navbar navbar-expand-lg fixed-center bg-body-tertiary" style="margin-bottom: 50px;">
+  <div class="container text-center">
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item medium grid-column">
+          <a class="nav-link active g-col-4 " aria-current="page" href="{% url 'main:about' %}"></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            О компании
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{% url 'main:about' %}">Проектирование</a></li>
+            <li><a class="dropdown-item" href="{% url 'main:tekhnicheskij-zakazchik' %}">Технический заказчик</a></li>
+            <li><a class="dropdown-item" href="{% url 'main:stroitelstvo' %}">Строительство</a></li>
+          </ul>
+        </li>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="{% url 'main:proektirovanie' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Проектирование
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{% url 'main:proektirovanie-metallokonstrukcij' %}">Проектирование из металлоконструкций </a></li>
+            <li><a class="dropdown-item" href="{% url 'main:proektirovanie-inzhenernyh-sistem' %}">Проектирование инженерных систем</a></li>
+            <li><a class="dropdown-item" href="{% url 'main:proektirovanie-vodosnabzheniya-i-kanalizacii' %}">Проектирование водоснабжения и канализации</a></li>
+            <li><a class="dropdown-item" href="{% url 'main:proekt-ehlektros-nabzheniya' %}">Проект электроснабжения</a></li>
+            <li><a class="dropdown-item" href="{% url 'main:proektirovanie-otopleniya' %}">Проект отопления</a></li>
+            <li><a class="dropdown-item" href="{% url 'main:proekt-ventilyacii' %}">Проект вентиляции</a></li>
+            <li><a class="dropdown-item" href="{% url 'main:proekt-pereplanirovki' %}">Проект перепланировки</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="{% url 'main:tekhnicheskij-zakazchik' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Технический заказчик
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{% url 'main:soglasovanie-arhitekturno-gradostroitelnogo-oblika-obekta' %}">Согласование АГР</a></li>
+            <li><a class="dropdown-item" href="{% url 'main:izmenenie-vri-zemelnogo-uchastka-selskohozyajstvennogo-naznacheniya' %}">Изменение ВРИ</a></li>
+            <li><a class="dropdown-item" href="{% url 'main:poluchenie-razresheniya-na-stroitelstvo' %}">Получение разрешения на строительство</a></li>
+            <li><a class="dropdown-item" href="{% url 'main:soglasovanie-rekonstrukci' %}">Согласование реконструкции</a></li>
+            <li><a class="dropdown-item" href="{% url 'main:poluchenie-gpzu' %}">Получение ГПЗУ</a></li>
+            <li><a class="dropdown-item" href="{% url 'main:vvod-v-ehkspluataciyu' %}">Ввод в эксплуатацию</a></li>
+            <li><a class="dropdown-item" href="{% url 'main:organizaciya-provedeniya-inzhenernyh-izyskanij' %}">Организация проведения инженерных изысканий</a></li>
+            <li><a class="dropdown-item" href="{% url 'main:legalizaciya-samostroya' %}">Легализация самостроя</a></li>
+            <li><a class="dropdown-item" href="{% url 'main:izmeneniya-v-pzz' %}">Изменения в ПЗЗ</a></li>
+
+          </ul>
+        </li>
+
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Строительство
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{% url 'main:stroitelstvo-angara' %}">Строительсвто склада</a></li>
+            <li><a class="dropdown-item" href="{% url 'main:stroitelstvo-magazina' %}">Строительсвто ангара</a></li>
+            <li><a class="dropdown-item" href="{% url 'main:stroitelstvo-sklada' %}">Строительсвто магазина</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Согласование перепланировки
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{% url 'main:proekt-pereplanirovki-kvartiry' %}">Проект перепланировки квартиры</a></li>
+            <li><a class="dropdown-item" href="{% url 'main:soglasovanie-pereplanirovki' %}">Согласование перепланировки</a></li>
+            <li><a class="dropdown-item" href="{% url 'main:soglasovanie-pereplanirovki-kvartiry' %}">Согласование перепланировки квартиры</a></li>
+            <li><a class="dropdown-item" href="{% url 'main:soglasovanie-pereplanirovki-nezhilogo-pomesheniya' %}">Согласование перепланировки нежилого помещения</a></li>
+            <li><a class="dropdown-item" href="{% url 'main:uzakonit-pereplanirovku' %}">Узаконить перепланировку</a></li>
+            <li><a class="dropdown-item" href="{% url 'main:proekt-pereplanirovki-nezhilogo-zdaniya' %}">Проект перепланировки нежилого здания</a></li>
+
+          </ul>
+        </li>
+          </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+        <button class="btn btn-outline-success" type="submit">Поиск</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+    {% bootstrap_messages %}
+
+    {% block content %}
+
+
+    {% endblock %}
+ <div class="contacts-section">
+        <div class="content">
+            <h2 class="contacts-title">Наши контакты</h2>
+        <div class="contacts-container">
+            <div class="contacts-map">
+                <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/search/%D0%93%D0%BE%D1%80%D0%BE%D0%B4%20%D0%9C%D0%BE%D1%80%D0%BA%D0%BE%D0%B2%D0%BD%D1%8B%D0%B9/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Город Морковный в Москве</a><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва</a><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0fdc0ad29fe82df64078732d8f29ae22d3820ca1841418e2a2e3ca90afdbebfe&amp;source=constructor" width="500" height="400" frameborder="0"></iframe></div>
+            </div>
+            <div class="contacts-info">
+                <h3>Работаем по всей России</h3>
+                <div class="adress-info">
+                    <ul>
+                        <p>Режим работы офисов:</p>
+                        <li>пн-чт с 9:00 до 18:00</li>
+                        <li>пт с 9:00 до 17:00</li>
+                        <li>сб-вс выходной</li>
+                    </ul>
+                    <ul>
+                        <p>Адрес офиса:</p>
+                        <li>Город Морковный, ул. Свекольная, офис 33, этаж 5</li>
+                    </ul>
+                </div>
+
+                <div class="consultation-form">
+                    <h3>Оставьте заявку для встречи в нашем офисе</h3>
+                    <form action="#" method="post">
+                        <div class="input">
+                            <label for="name">Как к вам обращаться?</label>
+                            <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                        </div>
+
+                        <div class="input">
+                            <label for="phone">Введите ваш номер</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+7 ( ) -" required>
+                        </div>
+
+                        <label for="time">Выберите время для звонка</label>
+                        <div class="radio-group">
+                            <div class="item">
+                                <input type="radio" id="now" name="time" value="now">
+                                <label for="now">Связаться сейчас по телефону</label>
+                            </div>
+                            <div class="item">
+                                <input type="radio" id="whatsapp" name="time" value="whatsapp">
+                                <label for="whatsapp">Согласовать время звонка в WhatsApp</label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="cta-button">Получить консультацию</button>
+                    </form>
+                    <p class="privacy-note">Нажимая на кнопку, Вы соглашаетесь с условиями Политики конфиденциальности</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    document.querySelector('.left-arrow').addEventListener('click', function() {
+        document.querySelector('.swiper-button-prev').click(); // Симуляция клика на стандартную кнопку Swiper "предыдущий слайд"
+    });
+
+    document.querySelector('.right-arrow').addEventListener('click', function() {
+        document.querySelector('.swiper-button-next').click(); // Симуляция клика на стандартную кнопку Swiper "следующий слайд"
+    });
+</script>
+
+  </script>
+</html>

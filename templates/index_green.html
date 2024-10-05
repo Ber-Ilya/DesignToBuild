@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+{% load django_bootstrap5 %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проектирование под ключ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <title>{% block title %}О компании{% endblock %} Сфера</title>
+    {% bootstrap_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+{% bootstrap_javascript %}
+</head>
+
+<body>
+    <div class="header header-top">
+        <div class="content">
+            <div class="first-head">
+                <div class="logo">
+                    <img src="{% static 'images/default-image.png' %}" alt="Logo" />
+                  </div>
+                  <span>Проектирование, монтаж и обслуживание зданий "под ключ" с 2003 года по всей РФ</span>      
+            </div>
+    
+    
+            <div class="contact-info">
+              <div class="icons">
+                    <a href="https://wa.me/89000000000">
+                    <img src="{% static 'images/icons8-whatsapp-logo-96.png' %}" alt="WhatsApp" />
+                    </a>
+                    <a href="https://t.me/username">
+                    <img src="{% static 'images/icons8-телеграмма-app-48.png' %}" alt="Telegram" />
+                    </a>
+                </div>
+                <div class="email-phone first-send">
+                    <span>Задайте вопрос напрямую:</span>
+                    <a href="mailto:yandex@yandex.ru">yandex@yandex.ru</a>
+                </div>
+            </div>
+              
+    
+    
+            <div class="phone-number first-send">
+                <span>Звоните, мы сейчас работаем:</span>
+                <a href="tel:8 900 000 00 00">8 900 000 00 00</a>
+            </div>
+            <a href="#" class="consultation-btn">Заказать быструю консультацию</a>
+        </div>
+    </div>
+      
+      <div class="nav content">
+        <ul>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Выполненные работы</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Сертификаты и лицензии</a></li>
+          <li><a href="#">Блог</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      
+
+    <section class="main-section">
+        <div class="content">
+            <div class="main-content">
+                <span class="razb">
+                    Разработка проектов любой сложности
+                </span>
+                <h1>Проектирование для коммерческих объектов любой сложности под ключ</h1>
+                <p>Снизим сметную стоимость вашего проекта до <strong>65%</strong></p>
+                <p>* за счёт оптимизации проекта и нетиповых решений, которые подойдут вашему бизнесу</p>
+                <div class="info">
+                    <button class="btn-primary">Получить КП в 3-х вариантах</button>
+                    <p class="small-text">Узнаем, за какой срок и за какую стоимость проект</p>
+                </div>
+            </div>
+            <div class="main-image">
+                <img src="{% static 'images/аа1.PNG' %}" alt="План">
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="features content">
+            
+            <div class="feature-item">
+                <img src="{% static 'images/image 2.svg' %}" alt="g">
+                <div class="feature_sub-item">
+                    <h5>Работаем как и "под ключ", так и на разных этапах</h5>
+                    <p>От оформления заявки до <strong>сдачи инспектору</strong> из надзорных органов</p>
+                </div>
+            </div>
+            
+            <div class="feature-item">
+                <img src="{% static 'images/image 3.svg' %}" alt="g">
+                <div class="feature_sub-item">
+                    <h5>Выездная консультация и замер</h5>
+                    <p>Выезжаем на объект в течение <strong>1-2 дней</strong></p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <img src="{% static 'images/image 4.svg' %}" alt="g">
+                <div class="feature_sub-item">
+                    <h5>Безопасно и законно</h5>
+                    <p>Соблюдаем технику безопасности и регламенты <strong>ГОСТов, СНИПов и ПУЭ</strong></p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <img src="{% static 'images/image 5.svg' %}" alt="g">
+                <div class="feature_sub-item">
+                    <h5>Надежно и прозрачно</h5>
+                    <p>Работаем по договору с <strong>фиксированием цены</strong>, которая <strong>не изменится</strong> в процессе работы</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="steps-section">
+        <div class="content">
+            <h2>Инженерные коммуникации вашего объекта “под ключ” от проектирования, до запуска и регулярного обслуживания</h2>
+            <div class="steps">
+                <div class="step-item">
+                    <h5>Подбор комплектации</h5>
+                    <p>Подбор оптимального варианта комплектации оборудования под ваши потребности и цели</p>
+                </div>
+                <div class="step-item">
+                    <h5>Проект</h5>
+                    <p>Создание проекта. Работу выполняет аккредитованная проектная группа</p>
+                </div>
+                <div class="step-item">
+                    <h5>Монтаж</h5>
+                    <p>Монтаж инженерных систем в строгом соответствии с технологией производства работ, с неизменным качеством</p>
+                </div>
+                <div class="step-item">
+                    <h5>Испытания</h5>
+                    <p>Запуск и испытание систем в в различных режимах, вывод на проектные мощности</p>
+                </div>
+                <div class="step-item">
+                    <h5>Обслуживание</h5>
+                    <p>Гарантийное и постгарантийное техническое обслуживание</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits-section">
+        <div class="content">
+            <p>Получите все услуги в одном месте строго в договорные строки, это отличный способ сэкономить</p>
+            <ul>
+                <li>Время</li>
+                <li>Нервы</li>
+                <li>Деньги</li>
+            </ul>
+        </div>
+    </section>
+
+   
+
+    <!-- Новая секция -->
+    <section class="why-us-section">
+        <div class="content">
+
+            <h2>Почему из сотен архитектурных бюро нас выбирают для проектирования сложных проектов?</h2>
+            <div class="why-us-grid">
+                <div class="why-us-item">
+                    <div class="sub">
+                        <h3>Качество документации</h3>
+                        <img src="{% static 'images/papka.png' %}" alt="g">
+                    </div>
+                    <ul>
+                        <li>Расчет нагрузок без "перезакладов"</li>
+                        <li>Подробная и понятная проектная документация</li>
+                        <li>Детальная рабочая документация для строителей</li>
+                    </ul>
+                </div>
+                <div class="why-us-item">
+                    <div class="sub">
+                        <h3>Смета в комплекте</h3>
+                        <img src="{% static 'images/papka.png' %}" alt="g">
+                    </div>
+                    <ul>
+                        <li>Для каждого проекта делаем смету в реальных рыночных ценах на стройматериалы и работы подрядчиков</li>
+                    </ul>
+                </div>
+                <div class="why-us-item">
+                    <div class="sub">
+                        <h3>Понятная цена и сроки</h3>
+                        <img src="{% static 'images/papka.png' %}" alt="">
+                    </div>
+                    <ul>
+                        <li>Прозрачная цена проекта, достаточная комплектация материалов</li>
+                        <li>Делаем экономически выгодные проекты</li>
+                    </ul>
+                </div>
+                <div class="why-us-item">
+                    <div class="sub">
+                        <h3>Гарантируем сроки и стоимость</h3>
+                        <img src="{% static 'images/papka.png' %}" alt="">
+                    </div>
+                    <ul>
+                        <li>Система управления проектированием и проект точно в срок</li>
+                    </ul>
+                </div>
+                <div class="why-us-item">
+                    <div class="sub">
+                        <h3>Неограниченные правки</h3>
+                        <img src="{% static 'images/papka.png' %}" alt="">
+                    </div>
+                    <ul>
+                        <li>Корректируем проект столько, сколько нужно для достижения желаемого результата</li>
+                        <li>Вовлечение в ваш проект</li>
+                    </ul>
+                </div>
+                <div class="cta-box">
+                    <p>Экономим клиентам 20-30% на строительстве за счет расчета нагрузок конструкторами и отсутствию ненужных "перезакладов".</p>
+                    <button class="btn-primary">Получить КП</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="design-section">
+        <div class="content">
+
+            <h2>Проектируем для всех коммерческих и муниципальных объектов</h2>
+            <div class="design-options">
+                <div class="design-option">
+                    <img src="{% static 'images/image 9.png' %}" alt="g">
+                    <h3>Общественные места с большим количеством энергопотребителей</h3>
+                    <p>Магазины, ТЦ, кафе, рестораны, кальянные, пиццерии, пекарни, бассейны, бани, сауны, SPA, офисы, фитнес-клубы, гостиницы</p>
+                </div>
+                <div class="design-option">
+                    <img src="{% static 'images/image 7.png' %}" alt="g">
+                    <h3>Промышленные предприятия, государственные учреждения</h3>
+                    <p>Производства, цеха, склады, заводы, школы, детсады, медицинские учреждения, концертные залы</p>
+                </div>
+                <div class="design-option">
+                    <img src="{% static 'images/image 8.png' %}" alt="g">
+                    <h3>Все виды инженерных систем</h3>
+                    <p>Отопление, вентиляция и кондиционирование, канализация</p>
+                </div>
+            </div>
+
+            <div class="design-cta">
+                <div class="sub">
+                    <h4>В списке нет что Вам необходимо?</h4>
+                    <p>
+                        Мы можем выполнить практически любые работы по 
+                        проектированию, даже если они не указаны на сайте. 
+                        Оставьте заявку и мы проконсультируем Вас.
+                    </p>
+                </div>
+                <button class="btn-primary">Заказать консультацию</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Новая секция "Примеры проектов" -->
+    <section class="projects-section">
+        <div class="content">
+
+            <h2>Вот некоторые примеры наших проектов, они сделаны по всем нормам СП 118.13330.2022</h2>
+            <div class="project-tabs">
+                <button class="project-tab">Цех</button>
+                <button class="project-tab">Котельная</button>
+                <button class="project-tab active">Ангар</button>
+                <button class="project-tab">Школа</button>
+                <button class="project-tab">Стадион</button>
+            </div>
+            <div class="project-images">
+                <!-- Место для изображения -->
+                <img src="{% static 'images/angaractive.png' %}" alt="Проект Ангара">
+            </div>
+        </div>
+    </section>
+
+    <!-- !! -->
+
+    <div class="consultation-section">
+        <div class="content">
+            
+            <div class="calculator-info">
+                <h2>УЖЕ СЕЙЧАС МОЖНО РАССЧИТАТЬ ПРЕДВАРИТЕЛЬНЫЕ <br><span class="highlight">СРОКИ И СТОИМОСТЬ РАБОТ</span></h2>
+                
+                <div class="grid">
+                    <div class="specialist">
+                        <img src="{% static 'images/chelovek.png'' %}" alt="Илья Березкин" class="specialist-img">
+                        <div class="specialist-info">
+                            <p class="specialist-name">Илья Березкин</p>
+                            <p class="specialist-title">Руководитель <span>"Технической завязки"</span></p>
+                        </div>
+                    </div>
+                    <div class="special-info">
+                        <p>Мы не используем «псевдо» калькуляторы на сайте!</p>
+                        <p>«Наш специалист подготовит расчёт полной стоимости объекта в течение 1 рабочего дня»</p>
+                        <p class="guarantee">ПОСЛЕ ОТВЕТОВ НА ВОПРОСЫ ВЫ <span class="highlight">ГАРАНТИРОВАНО</span> ПОЛУЧИТЕ:</p>
+                        <p>Коммерческое предложение в 3-х вариантах</p>
+                    </div>
+                </div>
+                
+                <div class="button">
+                    <button class="cta-button">Ответить на вопросы</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- !! -->
+    <div class="contact-section">
+        <div class="content">
+
+            <div class="grid">
+                <div class="information">
+                    <div class="over">
+                        <h2><span>Успешно сотрудничаем</span><br>с отделами снабжения и комплектации</h2>
+                        <ul>
+                            <p>Получите:</p>
+                            <li>Лучшее предложение по "Цене/Срокам" под ваш бюджет</li>
+                            <li>Благодарность руководства компании за выбор подрядчика по проектным работам</li>
+                        </ul>
+                    </div>
+                    <div class="discount-info">
+                        <p><span class="checkmark">✔</span><span>Предусмотрена система скидок и бонусов</span></p>
+                    </div>
+                </div>
+                <div class="consultation-form">
+                    <h3>Оставьте заявку на консультацию</h3>
+                    <form action="#" method="post">
+                        <div class="input">
+                            <label for="name">Как к вам обращаться?</label>
+                            <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                        </div>
+            
+                        <div class="input">
+                            <label for="phone">Введите ваш номер</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+7 ( ) -" required>
+                        </div>
+            
+                        <label for="time">Выберите время для звонка</label>
+                        <div class="radio-group">
+                            <div class="item">
+                                <input type="radio" id="now" name="time" value="now">
+                                <label for="now">Связаться сейчас по телефону</label>
+                            </div>
+                            <div class="item">
+                                <input type="radio" id="whatsapp" name="time" value="whatsapp">
+                                <label for="whatsapp">Согласовать время звонка в WhatsApp</label>
+                            </div>
+                        </div>
+            
+                        <button type="submit" class="cta-button">Получить консультацию</button>
+                    </form>
+                    <p class="privacy-note">Нажимая на кнопку, Вы соглашаетесь с условиями Политики конфиденциальности</p>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <!-- 1 -->
+    <div class="workflow-section">
+        <div class="content">
+            <h2 class="workflow-title">Посмотрите, как мы с вами будем работать</h2>
+            <div class="workflow-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <p>Отправить нам заявку и узнать ориентировочную стоимость проектирования</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <p>Руководитель проектного отдела свяжется с Вами и по телефону уточнит ключевые моменты</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <p>Ответит на Ваши вопросы и расскажет о нюансах в проектировании</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <p>Договариваемся о встрече и обсуждаем детали</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <p>Согласовываем форму договора и приступаем к выполнению</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="clients-section">
+        <div class="content">
+            <h2 class="clients-title">Наши клиенты — владельцы торговой и офисной недвижимости, застройщики и государственные учреждения</h2>
+            <div class="clients-logos">
+                <div><img src="{% static 'images/sber.png' %}" alt="Сбербанк"></div>
+                <img src="{% static 'images/akbars.png' %}" alt="Ак Барс Банк">
+                <img src="{% static 'images/vtb.png' %}" alt="ВТБ">
+                <img src="{% static 'images/gaz.png' %}" alt="Газпром">
+                <img src="{% static 'images/pad.png' %}" alt="РЖД">
+                <img src="{% static 'images/mts.png' %}" alt="МТС">
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+    <div class="reviews-section">
+        <div class="content">
+            
+            <div class="sub">
+                <h2 class="reviews-title">Посмотрите реальные отзывы наших клиентов</h2>
+            <div class="slide-control">
+                <span>Листайте вправо</span>
+                <button class="slider-arrow left-arrow"><img src="{% static 'images/right aroow.PNG' %}" alt="arrow"></button>
+                <button class="slider-arrow right-arrow"><img src="{% static 'images/leftarrow.PNG' %}" alt="arrow"></button>
+            </div>
+            </div>
+            <div class="reviews-slider">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- ! -->
+                      <div class="swiper-slide">
+                        <div class="review">
+                            <div class="rev-control">
+                                <p class="review-highlight">
+                                    Благодарственное письмо<br>от ООО "Внуково Логистик"
+                                </p>
+                                <p class="review-text txt">
+                                    «...Все этапы работ велись с соблюдением плана-графика работ, а еженедельные отчеты о проделанной работе держали в курсе...»
+                                </p>
+                                <div class="podpis">
+                                    <p class="review-author">Генеральный директор<br><span>В.В. Митькин</span></p>
+                                    <img src="{% static 'images/podpis.png' %}" alt="Отзыв Внуково Логистик" class="review-image">
+                                </div>
+                            </div>
+                            <div class="rev-img">
+                                <img src="{% static 'images/35662171219317735563.png' %}" alt="Отзыв Внуково Логистик" class="review-image">
+                            <button class="review-button">Подробнее</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="review">
+                            <div class="rev-control">
+                                <p class="review-highlight">
+                                    Благодарственное письмо<br>от ООО "Внуково Логистик"
+                                </p>
+                                <p class="review-text txt">
+                                    «...Все этапы работ велись с соблюдением плана-графика работ, а еженедельные отчеты о проделанной работе держали в курсе...»
+                                </p>
+                                <div class="podpis">
+                                    <p class="review-author">Генеральный директор<br><span>В.В. Митькин</span></p>
+                                    <img src="{% static 'images/podpis.png' %}" alt="Отзыв Внуково Логистик" class="review-image">
+                                </div>
+                            </div>
+                            <div class="rev-img">
+                                <img src="{% static 'images/35662171219317735563.png' %}" alt="Отзыв Внуково Логистик" class="review-image">
+                            <button class="review-button">Подробнее</button>
+                            </div>
+                        </div>
+                      </div>
+                      
+                      
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="certifications-section">
+        <div class="content">
+            <h2 class="certifications-title">Имеем все необходимые для работы допуски и аттестации</h2>
+            <div class="certifications-info">
+                <p><span>✔</span> <span>Проектируем и монтируем <span>строго по нормам</span> СП, СНиП, ПУЭ, ГОСТ и актуальным на 2024 год</span></p>
+                <p><span>✔</span> <span>Имеем <span>свидетельство СРО</span> на проектирование и на монтаж</span></p>
+            </div>
+            <div class="certifications-images">
+                <img src="{% static 'images/35662171219317735563.png' %}" alt="Сертификат 1">
+                <img src="{% static 'images/35662171219317735563.png' %}" alt="Сертификат 2">
+                <img src="{% static 'images/35662171219317735563.png' %}" alt="Сертификат 3">
+                <img src="{% static 'images/35662171219317735563.png' %}" alt="Сертификат 4">
+                <img src="{% static 'images/35662171219317735563.png' %}" alt="Сертификат 5">
+                <img src="{% static 'images/35662171219317735563.png' %}" alt="Сертификат 5">
+            </div>
+        </div>
+    </div>
+    
+    <div class="team-section">
+        <div class="content">
+            <h2 class="team-title">Команда, которая будет работать над подключением к электросетям вашего объекта</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="{% static 'images/16041712314299.png' %}" alt="Жанна" class="team-photo">
+                    <div class="team-info">
+                        <h3 class="team-name">Жанна</h3>
+                        <div class="team-xp">
+                            <p><span>34</span>выполненных проекта</p>
+                            <p><span>6</span>лет опыта работ</p>
+                        </div>
+                        <p class="team-description">С 2013 года работает инженером. За это время работала с брендами "Теремок", "Детский мир", "Пятерочка".</p>
+
+                        <button class="team-button">Посмотреть сертификаты</button>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="{% static 'images/16041712314299.png' %}" alt="Жанна" class="team-photo">
+                    <div class="team-info">
+                        <h3 class="team-name">Жанна</h3>
+                        <div class="team-xp">
+                            <p><span>34</span>выполненных проекта</p>
+                            <p><span>6</span>лет опыта работ</p>
+                        </div>
+                        <p class="team-description">С 2013 года работает инженером. За это время работала с брендами "Теремок", "Детский мир", "Пятерочка".</p>
+
+                        <button class="team-button">Посмотреть сертификаты</button>
+                    </div>
+                </div>
+
+        </div>
+        </div>
+    
+        <div class="team-photo-group">
+            <img src="{% static 'images/22555171251768525330.png' %}" alt="Команда" class="team-photo-large">
+        </div>
+    </div>
+    
+    <div class="contacts-section">
+        <div class="content">
+            <h2 class="contacts-title">Наши контакты</h2>
+        <div class="contacts-container">
+            <div class="contacts-map">
+                <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/search/%D0%93%D0%BE%D1%80%D0%BE%D0%B4%20%D0%9C%D0%BE%D1%80%D0%BA%D0%BE%D0%B2%D0%BD%D1%8B%D0%B9/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Город Морковный в Москве</a><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.615057%2C55.749913&mode=search&sctx=ZAAAAAgBEAAaKAoSCZdvfVhvhFBAEUoKLIApd0xAEhIJxXWMKy7uB0ARAtTUsrW%2B7j8iBgABAgMEBSgKOABAA0gBYj1yZWxldl9yYW5raW5nX2hlYXZ5X3JlbGV2X3R1cmtfZm9ybXVsYT0xLjA6bDNfdHJfZGM1NjkyMzdfZXhwagJydZ0BzcxMPaABAKgBAL0BKaYm38IBC6%2Ft156VAdqdus8GggId0JPQvtGA0L7QtCDQnNC%2B0YDQutC%2B0LLQvdGL0LmKAgCSAgCaAgxkZXNrdG9wLW1hcHOqArcBMTc2MTg4MjY2NTUxLDE5Njk5NjY3MTA4OCwzNDkwMDI1NTkwLDE0MTQyNjgxMzczOCwyMjA4MDE1NTExMTAsMTA3MjQxMzI3Mjc2LDUzMDc3NjUwOTA3LDIzMzYzNzAwNTE2OCwzOTg2ODQxMTAxMiwxMTQzMjI0MTU4NDMsNjAwMjA4NCwxNjA5MjkyMzc0NjUsMTU2MTA0ODg2MTg2LDUxOTUwMzI3NDY5LDEzMTQxMDEzNjg2&sll=37.615057%2C55.749913&sspn=2.014989%2C0.667626&text=%D0%93%D0%BE%D1%80%D0%BE%D0%B4%20%D0%9C%D0%BE%D1%80%D0%BA%D0%BE%D0%B2%D0%BD%D1%8B%D0%B9&z=9.52" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+            </div>
+            <div class="contacts-info">
+                <h3>Работаем по всей России</h3>
+                <div class="adress-info">
+                    <ul>
+                        <p>Режим работы офисов:</p>
+                        <li>пн-чт с 9:00 до 18:00</li>
+                        <li>пт с 9:00 до 17:00</li>                        
+                        <li>сб-вс выходной</li>
+                    </ul>
+                    <ul>
+                        <p>Адрес офиса:</p>
+                        <li>Город Морковный, ул. Свекольная, офис 33, этаж 5</li>
+                    </ul>
+                </div>
+                
+                <div class="consultation-form">
+                    <h3>Оставьте заявку для встречи в нашем офисе</h3>
+                    <form action="#" method="post">
+                        <div class="input">
+                            <label for="name">Как к вам обращаться?</label>
+                            <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                        </div>
+            
+                        <div class="input">
+                            <label for="phone">Введите ваш номер</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+7 ( ) -" required>
+                        </div>
+            
+                        <label for="time">Выберите время для звонка</label>
+                        <div class="radio-group">
+                            <div class="item">
+                                <input type="radio" id="now" name="time" value="now">
+                                <label for="now">Связаться сейчас по телефону</label>
+                            </div>
+                            <div class="item">
+                                <input type="radio" id="whatsapp" name="time" value="whatsapp">
+                                <label for="whatsapp">Согласовать время звонка в WhatsApp</label>
+                            </div>
+                        </div>
+            
+                        <button type="submit" class="cta-button">Получить консультацию</button>
+                    </form>
+                    <p class="privacy-note">Нажимая на кнопку, Вы соглашаетесь с условиями Политики конфиденциальности</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- header add head-down -->
+    <div class="header head-down">
+        <div class="content">
+            <div class="first-head">
+                <div class="logo">
+                    <img src="{% static 'images/default-image.png' %}" alt="Logo" />
+                  </div>
+                  <span>Проектирование, монтаж и обслуживание зданий "под ключ" с 2003 года по всей РФ</span>      
+            </div>
+    
+    
+            <div class="contact-info">
+              <div class="icons">
+                    <a href="https://wa.me/89000000000">
+                    <img src="{% static 'images/icons8-whatsapp-logo-96.png' %}" alt="WhatsApp" />
+                    </a>
+                    <a href="https://t.me/username">
+                    <img src="{% static 'images/icons8-телеграмма-app-48.png' %}" alt="Telegram" />
+                    </a>
+                </div>
+                <div class="email-phone first-send">
+                    <span>Задайте вопрос напрямую:</span>
+                    <a href="mailto:yandex@yandex.ru">yandex@yandex.ru</a>
+                </div>
+            </div>
+              
+    
+    
+            <div class="phone-number first-send">
+                <span>Звоните, мы сейчас работаем:</span>
+                <a href="tel:8 900 000 00 00">8 900 000 00 00</a>
+            </div>
+            <a href="#" class="consultation-btn">Заказать быструю консультацию</a>
+        </div>
+    </div>
+
+    <div class="footer-info">
+        <div class="content">
+            <div class="item">
+                <p>ООО "ТЕХНИЧЕСКИЙ ЗАКАЗЧИК"</p>
+                <p>ОГРН: 7777777777777</p>
+                <p>ИНН: 77777777777</p>
+            </div>
+            <a href="#">Политика конфиденциальности</a>
+        </div>
+    </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    document.querySelector('.left-arrow').addEventListener('click', function() {
+        document.querySelector('.swiper-button-prev').click(); // Симуляция клика на стандартную кнопку Swiper "предыдущий слайд"
+    });
+
+    document.querySelector('.right-arrow').addEventListener('click', function() {
+        document.querySelector('.swiper-button-next').click(); // Симуляция клика на стандартную кнопку Swiper "следующий слайд"
+    });
+</script>
+
+  </script>
+</html>
